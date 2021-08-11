@@ -31,7 +31,9 @@ class Robot
   end
 
   def advance
-
+    hash = { north: [0, 1], east: [1, 0], south: [0, -1], west: [-1, 0] }
+    self.x += hash[bearing][0]
+    self.y += hash[bearing][1]
   end
 
 end
